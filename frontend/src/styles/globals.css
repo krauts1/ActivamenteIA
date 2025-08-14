@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0c10;
+  color: #eaf0f6;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  background: #11141a;
+  border: 1px solid #1f2630;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+button {
+  background: #2b81f7;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #1e6fd8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.flip {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+  color: #9fb3c8;
+}
+
+.env {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #9fb3c8;
+}
+
+.chat {
+  display: grid;
+  gap: 10px;
+  max-height: 50vh;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.bubble {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #1b2230;
+}
+
+.bubble.user {
+  background: #0d1320;
+}
+
+.bubble.assistant {
+  background: #0f1624;
+}
+
+.bubble .sources {
+  margin-top: 8px;
+}
+
+.muted {
+  color: #9fb3c8;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.footer {
+  margin-top: 16px;
+  color: #9fb3c8;
+}
+
+code {
+  background: #0d1117;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid #1f2630;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}

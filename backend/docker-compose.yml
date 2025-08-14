@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - faiss_data:/var/lib/rag/indexes
+      - ./data:/app/data
+volumes:
+  faiss_data:
