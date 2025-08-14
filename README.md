@@ -72,13 +72,13 @@ npm install
 npm run dev
 ```
 
-##📌 Uso
+## 📌 Uso
 
 - Sube un archivo en el frontend.
 - El backend lo procesa e indexa.
 - Haz preguntas en el chat y el sistema buscará respuestas basadas en el contenido subido.
 
-##🛠 Notas
+## 🛠 Notas
 
 El backend y frontend pueden correr en servidores separados, pero recuerda configurar CORS correctamente.
 
